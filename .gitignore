@@ -1,0 +1,240 @@
+# ==============================================================================
+# ApexHire Root .gitignore
+# Covers Root Monorepo, Spring Boot Backend, Python AI Backend, and React Frontend
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables & Secrets (CRITICAL)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+application-secret*.yml
+application-secret*.yaml
+application-secret*.properties
+.dev.vars
+
+# ------------------------------------------------------------------------------
+# 2. File Uploads & Storage
+# ------------------------------------------------------------------------------
+storage/
+**/storage/
+ApexHire/storage/
+storage/resumes/
+uploads/
+**/uploads/
+temp/
+**/temp/
+tmp/
+**/tmp/
+
+# ------------------------------------------------------------------------------
+# 3. Scratch & One-off Test Artifacts
+# ------------------------------------------------------------------------------
+scratch_analyze.json
+**/scratch_analyze.json
+scratch/
+**/scratch/
+*.scratch.*
+Temp/
+Temp.txt
+temp.*
+
+# ------------------------------------------------------------------------------
+# 4. Java & Spring Boot Backend (Maven / Gradle / JVM)
+# ------------------------------------------------------------------------------
+target/
+**/target/
+build/
+**/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Class & Package files
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper binary
+.mvn/wrapper/maven-wrapper.jar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# STS / Eclipse
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+**/nbproject/private/
+**/nbbuild/
+**/nbdist/
+**/.nb-gradle/
+
+# ------------------------------------------------------------------------------
+# 5. Python & AI Backend (ApexHire_PythonBackend)
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+dist/
+**/dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+**/*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+ENV/
+**/ENV/
+env/
+**/env/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+
+# Type checking / Linters
+.mypy_cache/
+**/.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+**/.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 6. Node.js & React Frontend (apex-resume-frontend)
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+.output/
+**/.output/
+.vinxi/
+**/.vinxi/
+.tanstack/**
+**/.tanstack/**
+.nitro/
+**/.nitro/
+*.local
+
+# Cloudflare / Wrangler
+.wrangler/
+**/.wrangler/
+
+# ------------------------------------------------------------------------------
+# 7. IDEs & Editors
+# ------------------------------------------------------------------------------
+# IntelliJ IDEA
+.idea/
+**/.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+**/.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# Sublime Text / Vim
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+*.sw?
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ------------------------------------------------------------------------------
+# 8. Operating System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------------------------
+# 9. Logs & Databases
+# ------------------------------------------------------------------------------
+logs/
+**/logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db

@@ -1,0 +1,9 @@
+[submodule "ApexHire"]
+	path = ApexHire
+	url = https://github.com/AnujRawat1/ApexHire-Backend.git
+[submodule "ApexHire_PythonBackend"]
+	path = ApexHire_PythonBackend
+	url = https://github.com/AnujRawat1/ApexHire-AI.git
+[submodule "apex-resume-frontend-4b0390e9"]
+	path = apex-resume-frontend-4b0390e9
+	url = https://github.com/AnujRawat1/apex-resume-frontend-4b0390e9.git
